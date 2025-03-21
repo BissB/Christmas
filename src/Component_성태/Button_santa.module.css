@@ -1,0 +1,29 @@
+.Button_santa_box {
+    position: fixed;
+    display: flex;
+    top: 52%;
+    left: 0;
+}
+
+
+.Button_santa {
+    pointer-events: auto;
+
+    animation-name: Santa;
+    animation-duration: 1s;
+    animation-delay: 25s;
+    animation-fill-mode: forwards;
+    
+   
+}
+
+
+@keyframes Santa {
+
+    0% {pointer-events: none;
+        opacity: 1;}
+
+    100% {pointer-events: none;
+        opacity: 0;}
+    
+}

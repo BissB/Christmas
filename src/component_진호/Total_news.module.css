@@ -1,0 +1,92 @@
+.news {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.back{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  /* left: 50%;
+  transform: translatex(-50%); */
+  flex-direction: column;
+
+  background-color: black;
+  background-size: 100%;
+  animation: erase 12s linear forwards;
+  animation-delay: 26s;
+}
+
+/* 0% { width: 60px;}
+50% {width: 100vw;}
+100% { width: 0px; } */
+
+@keyframes erase {
+  0% {
+    width: 100vw;
+    height: 100%;
+    opacity: 1;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  50% {
+    width: 100vw;
+  }
+
+  70% {
+    width: 0;
+  }
+
+  99% {
+    opacity: 1;
+    overflow: visible;
+  }
+
+  100% {
+    width: 0;
+
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family, Arial), sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.newspaper{
+  display: flex;
+  position: relative;
+  width: 0;
+  justify-content: center;
+  /* left: 50%;
+  transform: translatex(-50%); */
+  flex-direction: column;
+  background-color: #cac3a3;
+  overflow: hidden;
+
+  animation: newspaper 10s forwards;
+  animation-delay: 28s;
+}
+
+/* newpspaper가 어떻게 움직일지, 0~100%(시간)에 따라서 적는다 */
+@keyframes newspaper{ 
+ 0% { width: 60px;}
+ 20% { width: 100vw; }
+ 50% { width: 100vw; }
+ 100% { width: 0px; }
+}
+
+/* 크기 조정 및 시간 늘림 */
+/* 이미지 카드 섹션 크기 조절 및 이미지 섹션 구간 과 헤더 구간 애니메이션 자동이 동시에 적용 해야한다*/

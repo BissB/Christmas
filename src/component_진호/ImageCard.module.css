@@ -1,0 +1,50 @@
+
+/* 전체 이미지 카드 레이아웃 */
+.image_card {
+  flex: 1; /* 카드 크기 자동 조절 */
+  max-width: 30%; /* 카드 최대 너비 설정 */
+  padding: 15px;
+  background-color: #cac3a3;
+  border: 1px solid #000000;
+}
+
+.image_card img {
+  width: 100%; /* 이미지 가로 크기 조정 */
+  height: auto; /* 이미지 비율 유지 */
+  transition: transform 0.3s; /* 부드러운 애니메이션 */
+}
+
+/* 마우스 호버 시 확대 */
+.image_card img:hover {
+  transform: scale(1.1); /* 확대 기능 */
+}
+
+.image_card h2 {
+  font-size: 1.5rem; /* 제목 크기 조정 */
+  margin-bottom: 10px; /* 제목 하고 아래 컨텐츠 텍스트 및 요소들 사이 픽셀 간격 조정 */
+}
+
+.image_card p {
+  font-size: 1rem; /* 본문 크기 조정 */
+  line-height: 1.6; /* 줄 간격 추가 */
+
+}
+
+
+/* 초기 상태: 투명(보이지 않음) + 아래쪽으로 20px 이동된 위치에서 시작 */
+/* 애니메이션: 'fadeInMove' 적용, 0.8초 동안 실행, 최종 상태 유지(forwards) */
+
+/* 애니메이션 키프레임 */
+/* 'fadeInMove' 투명에서 불투명으로 변화 + 위치 이동 효과 추가 */
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* 20px 아래에서 시작 */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* 원래 위치(0)로 이동 */
+  }
+}
+
+/* 그나마 기억는것들 */

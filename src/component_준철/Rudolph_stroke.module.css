@@ -1,0 +1,20 @@
+.stroke {
+  display: flex;
+  position: absolute;
+  animation: erase .3s 8s linear forwards;
+}
+
+.stroke img {
+  width: 1000px;
+  display: block;
+}
+
+@keyframes erase {
+  0% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

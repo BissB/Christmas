@@ -1,0 +1,96 @@
+.container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    animation: erase 3s 56s linear forwards;
+}
+
+@keyframes erase {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.container2 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    animation: appear 3s 38s linear forwards;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+    
+}
+
+
+.obj {
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* animation-name: rightmove;
+    animation-duration: 3s;
+    animation-delay: 11s;
+    animation-timing-function: linear; */
+    /* z-index: 2; */
+}
+
+.obj2 {
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+
+    z-index: 1;
+}
+
+.obj:hover ~ .obj2 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.obj:hover {
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes updown {
+    10%     { bottom: 20%; transform: rotate(-15deg);}
+    20%     { bottom: 0%; transform: rotate(0deg); }
+    30%     { bottom: 20%; transform: rotate(15deg);}
+    40%     { bottom: 0%; transform: rotate(0deg); }
+    50%     { bottom: 20%; transform: rotate(-15deg);}
+    60%     { bottom: 0%; transform: rotate(0deg); }
+    70%     { bottom: 20%; transform: rotate(15deg);}
+    80%     { bottom: 0%; transform: rotate(0deg); }
+}
+
+@keyframes rightmove {
+    from {
+        transform: translatex(150%);
+    }
+  
+    to {
+    transform: translatex(0);
+  }
+}
+

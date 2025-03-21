@@ -1,0 +1,12 @@
+.image {
+    display: flex;
+    position: absolute;
+    bottom: 260px;
+    left: 900px;
+
+    z-index: 0;
+  }
+
+  .image1 {
+    width: 300px;
+}

@@ -1,0 +1,10 @@
+.image {
+    display: flex;
+    position: absolute;
+    bottom: 250px;
+    left: 600px;
+  }
+
+  .image1 {
+    width: 350px;
+}

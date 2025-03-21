@@ -1,0 +1,22 @@
+.news_section {
+  display: flex; /* 카드 가로 정렬 */
+  width: 100%;
+  justify-content: space-between; /* 카드 사이 간격 균등 */
+  align-items: flex-start; /* 상단 정렬  align-items 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정*/
+
+  /* gap: 10px; */
+  /* padding: 20px; */
+  /* position: fixed; */
+  /* overflow: hidden; */
+}
+
+@media (max-width: 768px) {
+  .news_section {
+    flex-direction: column; /* 작은 화면에서 세로 정렬  column 이 세로*/
+  }
+
+  .image_card {
+    max-width: 100%; /* 화면 크기에 맞게 확장 */
+  }
+}
+  

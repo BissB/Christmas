@@ -1,0 +1,31 @@
+.color_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;   
+}
+
+.box_red{
+    color:#e02466;
+    cursor: pointer;
+}
+
+.box_yellow{
+    color:#e0d796;
+    cursor: pointer;
+}
+
+.box_green{
+    color:#b6dc6b;
+    cursor: pointer;
+}
+
+.box_blue{
+    color:#9ff6fd;
+    cursor: pointer;
+}
+
+.box_purple{
+    color:#8c76b5;
+    cursor: pointer;
+}

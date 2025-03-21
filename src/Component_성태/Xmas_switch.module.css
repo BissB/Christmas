@@ -1,0 +1,17 @@
+/* * {
+    outline: 1px solid rgba(10, 10, 10, 0.5) !important;
+}
+ */
+ALL {
+    position: relative;
+    display: flex;
+
+    animation: erase 1s 26s linear forwards;
+}
+
+
+@keyframes erase {
+    to {
+        pointer-events: none;
+    }
+}

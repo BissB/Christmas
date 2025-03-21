@@ -1,0 +1,33 @@
+/* 색상 정하기 */
+
+.color_basic {
+    color: gray;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.color_wood{
+    color: brown;
+}
+
+.color_fild{
+    color: greenyellow
+}
+
+.color_star{
+    font-size: 60px;
+}
+
+.color_star.on{
+    color: gold;
+}
+
+.color_leaf{
+    font-size: 20px;
+    display: inline-flex;
+}
+
+.color_leaf.on{
+    color: greenyellow;
+}

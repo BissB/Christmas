@@ -1,0 +1,17 @@
+.image {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 600px;
+  
+    animation-name: flow;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    /* z-index: 3; */
+  }
+
+  .image1 {
+    width: 700px;
+}

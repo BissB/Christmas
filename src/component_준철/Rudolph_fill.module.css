@@ -1,0 +1,65 @@
+
+.fill {
+  display: flex;
+  position: absolute;
+  width: 1200px;
+  justify-content: center;
+  overflow: hidden;
+  animation: erase .3s 8s linear forwards;
+}
+
+.fill img {
+  width: 1000px;
+  display: block;
+  filter: drop-shadow(5px 5px 5px #000);
+  /* box-shadow: 5px 5px 5px #000; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  background-color: #094c31;
+  height: 100%;
+  animation: fall 4s 2.5s linear forwards; 
+  transform-origin: top;
+}
+
+@keyframes fall {
+  0% {
+    height: 100%; 
+   }
+ /* 20% {
+    height: 80%; 
+  }
+  30% {
+    height: 87%; 
+  }
+  50% {
+    height: 50%; 
+  }
+  60% {
+    height: 57%; 
+  }
+  80% {
+    height: 20%; 
+  } 
+  95% {
+    background-color: #094c31; 
+  }  */
+  100% {
+    /* background-color: #fff; */
+    height: 0%; 
+  }
+}
+
+@keyframes erase {
+  0% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

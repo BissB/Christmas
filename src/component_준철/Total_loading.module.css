@@ -1,0 +1,28 @@
+.Total {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  animation: erase 2s 12s linear forwards;
+}
+
+.back {
+    width: 100vw;
+    height: 100vh;
+    background-color: #094c31;
+    animation: erase 0.2s 10s linear forwards;
+}
+
+@keyframes erase {
+  0% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
